@@ -24,26 +24,23 @@ public class Chap01 {
 
         System.out.println("면적 : " + area);
         System.out.println("둘레 : " + perimeter);
-
     }
 
     public static void level02NormalOne() {
         char oneLetter = 'a';
-        int oneLetterToInt = oneLetter;
 
-        System.out.println("문자 a의 unicode : " + oneLetterToInt);
-
+        System.out.println("문자 a의 unicode : " + (int)oneLetter);
     }
 
     public static void level02NormalTwo() {
-        double nationalLanguage = 80.5;
+        double korean = 80.5;
         double math = 50.6;
         double english = 70.8;
 
-        int sum = (int) (nationalLanguage + math + english);
-        int avg = (int) ((nationalLanguage + math + english) / 3);
+        int sum = (int) (korean + math + english);
+        int avg = (int) ((korean + math + english) / 3);
 
         System.out.println("총점: " + sum);
-        System.out.printf("평균 : " + avg);
+        System.out.println("평균 : " + avg);
     }
 }
