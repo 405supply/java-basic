@@ -6,6 +6,6 @@ out/
 ## Personal settings
 /*
 
+src/Main.java
 !.gitignore
 !/src/
-/src/**
