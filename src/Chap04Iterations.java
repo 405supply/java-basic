@@ -128,11 +128,7 @@ public class Chap04Iterations {
         StringBuilder newStr = new StringBuilder();
 
         for (int i = 0; i < str.length(); i++) {
-            newStr.append(
-                    Character.isUpperCase(str.charAt(i)) ?
-                    (char) ('A' + ((str.charAt(i) - 'A' + push) % 'A') % 26) :
-                    (char) ('a' + ((str.charAt(i) - 'a' + push) % 'a') % 26)
-            );
+            newStr.append(Character.isUpperCase(str.charAt(i)) ? (char) ('A' + (str.charAt(i) - 'A' + push) % 26) : (char) ('a' + (str.charAt(i) - 'a' + push) % 26));
         }
 
         System.out.println("바뀐 문자열 : " + newStr);
