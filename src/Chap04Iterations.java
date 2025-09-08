@@ -68,7 +68,7 @@ public class Chap04Iterations {
         int randNum = (int) ((Math.random() * 100) % 100);
         int guessNum = 0;
 
-        int guesses = 1;
+        int guesses = 0;
 
         while (true) {
             System.out.print("추측할 정수 입력 : ");
@@ -88,5 +88,53 @@ public class Chap04Iterations {
                 break;
             }
         }
+    }
+
+    public void level03HardThree() {
+        System.out.print("문자열 입력 : ");
+        String str = scanner.next();
+        System.out.print("문자 입력 : ");
+        String search = scanner.next();
+
+        char c = search.charAt(0);
+
+        int count = 0;
+        boolean flag = true;
+
+        for (int i = 0; i < str.length(); i++) {
+            if (!Character.isAlphabetic(str.charAt(i))) {
+                System.out.println("영문이 아닌 문자가 포함되어 있습니다.");
+                flag = false;
+                break;
+            }
+
+            if (str.charAt(i) == c) {
+                count++;
+            }
+        }
+
+        if (flag) {
+            System.out.println("포함된 갯수 : " + count);
+        }
+    }
+
+    public void level04AdvancedOne() {
+        System.out.print("문자열 입력 : ");
+        String str = scanner.next();
+
+        System.out.print("숫자 입력 : ");
+        int push = scanner.nextInt() % 26;
+
+        StringBuilder newStr = new StringBuilder();
+
+        for (int i = 0; i < str.length(); i++) {
+            newStr.append(
+                    Character.isUpperCase(str.charAt(i)) ?
+                    (char) ('A' + ((str.charAt(i) - 'A' + push) % 'A') % 26) :
+                    (char) ('a' + ((str.charAt(i) - 'a' + push) % 'a') % 26)
+            );
+        }
+
+        System.out.println("바뀐 문자열 : " + newStr);
     }
 }
