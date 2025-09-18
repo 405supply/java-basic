@@ -1,3 +1,5 @@
+package assignment;
+
 public class Chap06BookDto {
     private String title;
     private String publisher;

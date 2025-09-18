@@ -1,3 +1,5 @@
+package assignment;
+
 import java.util.Scanner;
 
 public class Chap04Iterations {

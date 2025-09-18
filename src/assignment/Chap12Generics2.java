@@ -1,5 +1,4 @@
-import java.util.Arrays;
-import java.util.List;
+package assignment;
 
 public class Chap12Generics2 <T extends Number> {
     public <K extends Number> double sum(K[] list) {

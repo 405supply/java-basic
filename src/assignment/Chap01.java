@@ -1,3 +1,5 @@
+package assignment;
+
 public class Chap01 {
     public static void level01BasicOne() {
         int a = 20;
