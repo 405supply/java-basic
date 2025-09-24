@@ -1,4 +1,4 @@
-package assignment;
+package assignment.javaBasic;
 
 public class Chap06BookDto {
     private String title;

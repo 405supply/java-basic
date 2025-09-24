@@ -1,4 +1,4 @@
-package assignment;
+package assignment.javaBasic;
 
 public class Chap01 {
     public static void level01BasicOne() {

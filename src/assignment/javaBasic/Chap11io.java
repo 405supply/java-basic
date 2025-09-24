@@ -1,4 +1,4 @@
-package assignment;
+package assignment.javaBasic;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;

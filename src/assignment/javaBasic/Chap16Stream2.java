@@ -1,4 +1,4 @@
-package assignment;
+package assignment.javaBasic;
 
 import assignment.reqClass.Order;
 

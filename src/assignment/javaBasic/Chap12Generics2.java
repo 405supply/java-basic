@@ -1,4 +1,4 @@
-package assignment;
+package assignment.javaBasic;
 
 public class Chap12Generics2 <T extends Number> {
     public <K extends Number> double sum(K[] list) {

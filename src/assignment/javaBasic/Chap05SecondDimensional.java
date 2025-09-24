@@ -1,8 +1,8 @@
-package assignment;
+package assignment.javaBasic;
 
 import java.util.Scanner;
 
-public class Chap052ndDimensional {
+public class Chap05SecondDimensional {
     Scanner s = new Scanner(System.in);
 
     public void level01BasicOne() {
